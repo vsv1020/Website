@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /*------Color variables------*/
+    --black_900_33: #00000033;
+    --black_900_59: #00000059;
+    --blue_gray_100: #d5d5d5;
+    --deep_purple_a200_4c: #6c5ce74c;
+    --gray_200_01: #f0f0f0;
+    --gray_400_01: #b3b3b3;
+    --gray_400_02: #c2c2c2;
+    --white_a700_01: #ffffff;
+    --black_900: #030303;
+    --black_900_01: #010101;
+    --black_900_02: #000000;
+    --black_900_0c: #0000000c;
+    --black_900_19: #00000019;
+    --black_900_7f: #0000007f;
+    --deep_purple_a200: #6c5ce7;
+    --deep_purple_a200_33: #6c5ce733;
+    --gray_200: #e8e8e8;
+    --gray_400: #b6b6b6;
+    --gray_50: #f9f8fd;
+    --white_a700: #fefefe;
+
+    /*------Shadow variables------*/
+    --shadow-xs: 0 4px 5px 0 #0000000c;
+    --shadow-sm: 0 4px 20px 0 #00000019;
+    --shadow-md: 0 0 10px 0 #0000000c;
+    --shadow-lg: 0 4px 40px 0 #6c5ce74c;
+    --shadow-xl: 0 0 40px 0 #6c5ce74c;
+    --shadow-bs: inset 0 0 4px 0 #0000007f;
+    --shadow-bs1: inset 0 0 10px 0 #00000059;
+    --shadow-bs2: inset 0 0 30px 0 #6c5ce74c;
+    --shadow-bs3: 0 4px 50px 0 #6c5ce74c;
+
+    /*------Border radius variables------*/
+    --radius-xs: 5px;
+    --radius-sm: 10px;
+    --radius-md: 14px;
+    --radius-lg: 28px;
+
+    /*------Spacing variables------*/
+    --space-xs: 16px;
+    --space-sm: 22px;
+    --space-md: 26px;
+    --space-lg: 28px;
+    --space-xl: 30px;
+  }
+  [type="text"],
+  input:where(:not([type])),
+  [type="email"],
+  [type="url"],
+  [type="password"],
+  [type="number"],
+  [type="date"],
+  [type="datetime-local"],
+  [type="month"],
+  [type="search"],
+  [type="tel"],
+  [type="time"],
+  [type="week"],
+  [multiple],
+  textarea,
+  select {
+    appearance: initial;
+    background-color: initial;
+    border: initial;
+    border-width: 0;
+  }
+}
+@layer components {
+  /*-------------------------------------
+  Container CSS
+--------------------------------------*/
+  .container-xs {
+    @apply w-full mx-auto max-w-[1140px];
+  }
+
+  .container-sm {
+    @apply w-full mx-auto max-w-[1352px];
+  }
+}
