@@ -1,0 +1,51 @@
+module.exports = {
+  mode: "jit",
+  content: ["./src/**/**/*.{js,ts,jsx,tsx,html,mdx}", "./src/**/*.{js,ts,jsx,tsx,html,mdx}"],
+  darkMode: "class",
+  theme: {
+    screens: { md: { max: "1050px" }, sm: { max: "550px" } },
+    extend: {
+      colors: {
+        black: {
+          900: "var(--black_900)",
+          "900_33": "var(--black_900_33)",
+          "900_59": "var(--black_900_59)",
+          "900_01": "var(--black_900_01)",
+          "900_02": "var(--black_900_02)",
+          "900_0c": "var(--black_900_0c)",
+          "900_19": "var(--black_900_19)",
+          "900_7f": "var(--black_900_7f)",
+        },
+        blue_gray: { 100: "var(--blue_gray_100)" },
+        deep_purple: {
+          a200_4c: "var(--deep_purple_a200_4c)",
+          a200: "var(--deep_purple_a200)",
+          a200_33: "var(--deep_purple_a200_33)",
+        },
+        gray: {
+          50: "var(--gray_50)",
+          200: "var(--gray_200)",
+          400: "var(--gray_400)",
+          "200_01": "var(--gray_200_01)",
+          "400_01": "var(--gray_400_01)",
+          "400_02": "var(--gray_400_02)",
+        },
+        white: { a700_01: "var(--white_a700_01)", a700: "var(--white_a700)" },
+      },
+      boxShadow: {
+        xs: "0 4px 5px 0 #0000000c",
+        sm: "0 4px 20px 0 #00000019",
+        md: "0 0 10px 0 #0000000c",
+        lg: "0 4px 40px 0 #6c5ce74c",
+        xl: "0 0 40px 0 #6c5ce74c",
+        bs: "inset 0 0 4px 0 #0000007f",
+        bs1: "inset 0 0 10px 0 #00000059",
+        bs2: "inset 0 0 30px 0 #6c5ce74c",
+        bs3: "0 4px 50px 0 #6c5ce74c",
+      },
+      fontFamily: { inter: "Inter" },
+      backgroundImage: { gradient: "linear-gradient(180deg, #b3b3b3,#b6b6b6,#c2c2c2,#d5d5d5,#f0f0f0,#ffffff)" },
+    },
+  },
+  plugins: [require("@tailwindcss/forms")],
+};
